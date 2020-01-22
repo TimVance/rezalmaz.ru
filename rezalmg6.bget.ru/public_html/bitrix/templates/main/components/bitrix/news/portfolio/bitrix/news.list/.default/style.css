@@ -1,0 +1,17 @@
+div.portfolio-list {/*overflow:hidden; margin-left:-15px; margin-right:-15px;*/}
+div.portfolio-list .portfolio-item {/*float:left; width:33.333%; padding-left:15px; padding-right:15px; */margin-bottom:30px;}
+div.portfolio-list .portfolio-item .name {height:35px;}
+
+div.portfolio-list img.preview_picture {
+/* 	float:left; */
+	margin:0 4px 6px 0;
+	max-width:100%;
+	height:auto;
+	border:1px solid #999;
+}
+
+.portfolio-date-time {
+	color:#486DAA;
+}
+
+div.portfolio-list .nav-block {padding-left:15px; padding-right:15px; margin-top:30px;}

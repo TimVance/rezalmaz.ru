@@ -1,0 +1,11 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Бурение отверстий в перекрытиях", 
+		"/almaznoe_burenie/perekrytiy/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

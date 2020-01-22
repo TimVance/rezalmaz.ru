@@ -1,0 +1,3 @@
+<?
+$sSectionName="almaznaya_rezka";
+?>

@@ -1,0 +1,15 @@
+@media print {
+.header, .footer, #prbutton, #feedback{display:none;}
+}
+input#prbutton {
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #FFC107;
+    background: #FFC107;
+    padding: 5px 10px;
+    font-size: 18px;
+    float: right;
+    margin-right: 50px;
+	cursor:pointer;
+}

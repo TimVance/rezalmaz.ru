@@ -1,0 +1,11 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Сверление подрозетников", 
+		"/almaznoe_burenie/podrozetnik/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

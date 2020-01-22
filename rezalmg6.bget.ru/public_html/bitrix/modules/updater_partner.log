@@ -1,0 +1,14 @@
+2011-04-04 15:21:00 -  - exec CUpdateClientPartner::SearchModulesEx
+2011-04-04 15:21:00 -  - exec CUpdateClientPartner::__CollectRequestData
+2011-04-04 15:21:00 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=server&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=5.3.2-1ubuntu4.7&dbv=5.1.41&instm=main%2C10.0.1%2CY%3Bcompression%2C10.0.0%2CN%3Bfileman%2C10.0.0%2CN%3Bsocialservices%2C10.0.1%2CN%3Biblock%2C10.0.1%2CN%3Bsearch%2C10.0.0%2CN%3Bperfmon%2C10.0.0%2CN%3Bsitecorporate%2C10.0.0%2CN%3Bseo%2C10.0.0%2CN&search_module_id=&search_module=&search_category=&search_type=3%2C6&search_order=ASC&search_order_by=NAME&search_page=1
+2011-04-04 15:21:00 -  - exec CUpdateClientPartner::GetHTTPPage
+2011-04-04 15:21:00 -  - TIME SearchModulesEx(request) 0.542 sec
+2011-04-04 15:21:00 -  - exec CUpdateClientPartner::ParseServerData
+2011-04-04 15:21:00 - GUL02 - [LICENSE_NOT_FOUND] Лицензия не найдена
+2012-11-13 17:53:06 -  - exec CUpdateClientPartner::SearchModulesEx
+2012-11-13 17:53:06 -  - exec CUpdateClientPartner::__CollectRequestData
+2012-11-13 17:53:06 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.rezalmaz.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=F&CLIENT_PHPVER=5.2.6-1%2Blenny10&dbv=5.0.51&instm=main%2C10.0.7%2CN%3Bperfmon%2C10.0.1%2CN%3Bsocialservices%2C10.0.2%2CN%3Bcompression%2C10.0.0%2CN%3Bfileman%2C10.0.5%2CN%3Bsearch%2C10.0.2%2CN%3Bsitecorporate%2C10.0.0%2CN%3Bseo%2C10.0.0%2CN%3Biblock%2C10.0.7%2CN&search_module_id=&search_module=&search_category=&search_type=&search_order=ASC&search_order_by=NAME&search_page=1
+2012-11-13 17:53:06 -  - exec CUpdateClientPartner::GetHTTPPage
+2012-11-13 17:53:07 -  - TIME SearchModulesEx(request) 1.68 sec
+2012-11-13 17:53:07 -  - exec CUpdateClientPartner::ParseServerData
+2012-11-13 17:53:07 - GUL02 - [SYS_ERROR_AB_ACTIVE] Истек период получения обновлений и коммерческой техподдержки
