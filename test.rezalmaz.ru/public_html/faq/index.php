@@ -62,8 +62,8 @@ $APPLICATION->SetTitle("Вопрос-Ответ");
 <div class="faq">
 <?$APPLICATION->IncludeComponent("bitrix:support.faq.section.list", "template_faq", Array(
 	"IBLOCK_TYPE" => "FAQ",	// Типы инфоблоков
-	"IBLOCK_ID" => "1",	// Список инфоблоков
-	"SECTION" => "-",	// Список секций (по умолчанию - из корневой секции)
+	"IBLOCK_ID" => "6",	// Список инфоблоков
+	"SECTION" => "",	// Список секций (по умолчанию - из корневой секции)
 	"EXPAND_LIST" => "Y",	// Показывать вложенные секции
 	"SECTION_URL" => "faq_detail.php?SECTION_ID=#SECTION_ID#",	// URL страницы секции (по умолчанию - из настроек инфоблока)
 	"AJAX_MODE" => "N",	// Включить режим AJAX

@@ -9,7 +9,7 @@
 					Array(
 						"AJAX_MODE" => "N",
 						"IBLOCK_TYPE" => "FAQ",
-						"IBLOCK_ID" => "1",
+						"IBLOCK_ID" => "6",
 						"NEWS_COUNT" => "10",
 						"SORT_BY1" => "ACTIVE_FROM",
 						"SORT_ORDER1" => "DESC",
@@ -35,7 +35,7 @@
 						"CACHE_GROUPS" => "Y",
 						"DISPLAY_TOP_PAGER" => "N",
 						"DISPLAY_BOTTOM_PAGER" => "N",
-						"PAGER_TITLE" => "Новости",
+						"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 						"PAGER_SHOW_ALWAYS" => "Y",
 						"PAGER_TEMPLATE" => "faq",
 						"PAGER_DESC_NUMBERING" => "N",
