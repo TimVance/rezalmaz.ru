@@ -1,0 +1,3 @@
+<?
+$sSectionName="kanatnaya_rezka";
+?>
