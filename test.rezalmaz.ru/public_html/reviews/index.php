@@ -12,7 +12,7 @@ $APPLICATION->SetTitle("Оставить отзыв");
 		
 		<?$APPLICATION->IncludeComponent("bitrix:news.list", "reviews_list", array(
 	"IBLOCK_TYPE" => "FAQ",
-	"IBLOCK_ID" => "3",
+	"IBLOCK_ID" => "4",
 	"NEWS_COUNT" => "20",
 	"SORT_BY1" => "ACTIVE_FROM",
 	"SORT_ORDER1" => "DESC",

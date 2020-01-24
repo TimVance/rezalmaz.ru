@@ -118,17 +118,18 @@ $APPLICATION->SetTitle("Алмазная резка бетона в Москве
     <h2 class="h2_bg">Клиенты нашей компании</h2>
    		<hr /> 		 
    <p>Качество наших услуг оценили:</p>
-   <?$arrFilter = array("=ID" => array(10,4,6,7,8));?>  
-	
+   <?//$arrFilter = array("=ID" => array(10,4,6,7,8));?>
+   <?$arrFilter = array("=ID" => array(8,2,4,5,6));?>
+
    		<?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
 	"clients_index",
 	Array(
 		"IBLOCK_TYPE" => "clients",
-		"IBLOCK_ID" => "2",
+		"IBLOCK_ID" => "1",
 		"NEWS_COUNT" => "10",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_ORDER1" => "DESC",
+		"SORT_BY" => "SORT",
+		"SORT_ORDER" => "ASC",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER2" => "ASC",
 		"FILTER_NAME" => "arrFilter",
