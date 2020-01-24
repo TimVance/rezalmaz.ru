@@ -21,7 +21,7 @@ $APPLICATION->SetPageProperty("description", "Здесь вы можете оз�
 		"SEF_MODE" => "Y",
 		"AJAX_MODE" => "N",
 		"IBLOCK_TYPE" => "Content",
-		"IBLOCK_ID" => "8",
+		"IBLOCK_ID" => "5",
 		"NEWS_COUNT" => "20",
 		"USE_SEARCH" => "N",
 		"USE_RSS" => "N",

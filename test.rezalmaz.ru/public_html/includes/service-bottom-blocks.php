@@ -19,7 +19,7 @@
 	<h2 class="h2_bg">Отзывы</h2>
 	<?$APPLICATION->IncludeComponent("bitrix:news.list", "service_reviews_list", array(
 		"IBLOCK_TYPE" => "FAQ",
-		"IBLOCK_ID" => "3",
+		"IBLOCK_ID" => "4",
 		"NEWS_COUNT" => "3",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_ORDER1" => "DESC",
@@ -103,12 +103,12 @@
 	
 	<?
 	global $arrFilter;
-	$arrFilter = array("=ID" => array(5410,5408,5407));
+	$arrFilter = array("=ID" => array(30,28,27));
 	?>
 	
 	<?$APPLICATION->IncludeComponent("bitrix:news.list", "service_portfolio", array(
 		"IBLOCK_TYPE" => "PORTFOLIO",
-		"IBLOCK_ID" => "8",
+		"IBLOCK_ID" => "5",
 		"NEWS_COUNT" => "3",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_ORDER1" => "DESC",
