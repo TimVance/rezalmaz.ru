@@ -1,3 +1,0 @@
-<?
-$sSectionName="rezka_proyomov";
-?>

@@ -1,0 +1,19 @@
+2020-01-22 18:00:09 -  - exec CUpdateClientPartner::SearchModulesEx
+2020-01-22 18:00:09 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-01-22 18:00:09 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.test.rezalmaz.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=7.3.12&NGINX=Y&dbv=5.7.21&instm=main%2C20.0.0%2CY%3Blanding%2C19.0.175%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bsocialservices%2C19.0.0%2CN%3Biblock%2C18.6.1000%2CN%3Bsearch%2C18.5.200%2CN%3Bhighloadblock%2C19.0.0%2CN%3Bcompression%2C19.0.0%2CN%3Bseo%2C19.0.800%2CN%3Bclouds%2C19.0.0%2CN%3Bperfmon%2C18.5.0%2CN%3Btranslate%2C18.0.100%2CN%3Bb24connector%2C18.5.0%2CN%3Bui%2C19.0.400%2CN%3Bbitrixcloud%2C18.5.0%2CN%3Brest%2C18.5.162%2CN%3Bmessageservice%2C19.0.0%2CN%3Bfileman%2C18.5.500%2CN&search_module_id=&search_module=&search_category=7%2C14&search_type=&search_order=DESC&search_order_by=SORT&search_page=1&SUPD_SRS=RU&SUPD_CMP=N
+2020-01-22 18:00:09 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-01-22 18:00:10 -  - TIME SearchModulesEx(request) 0.877 sec
+2020-01-22 18:00:10 -  - exec CUpdateClientPartner::ParseServerData
+2020-01-22 18:00:10 - GUL02 - [LICENSE_NOT_FOUND] Лицензия не найдена
+2020-01-28 12:01:24 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-01-28 12:01:24 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-01-28 12:01:25 -  - exec CUpdateClientPartner::ParseServerData
+2020-01-28 12:01:25 -  - exec CUpdateClientPartner::GetUpdatesList
+2020-01-28 12:01:25 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-01-28 12:01:25 -  - utf=Y&lang=ru&stable=Y&CANGZIP=Y&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.rezalmaz.ru&LICENSE_KEY=X&SUPD_STS=1&SUPD_URS=0&SUPD_URSA=1&TYPENC=D&CLIENT_PHPVER=7.3.12&NGINX=Y&dbv=5.7.21&instm=main%2C20.0.0%2CY%3Blanding%2C19.0.175%2CN%3Bbitrix.sitecorporate%2C15.5.0%2CN%3Bsocialservices%2C19.0.0%2CN%3Biblock%2C18.6.1000%2CN%3Bsearch%2C18.5.200%2CN%3Bhighloadblock%2C19.0.0%2CN%3Bcompression%2C19.0.0%2CN%3Bseo%2C19.0.800%2CN%3Bclouds%2C19.0.0%2CN%3Bperfmon%2C18.5.0%2CN%3Btranslate%2C18.0.100%2CN%3Bb24connector%2C18.5.0%2CN%3Bui%2C19.0.400%2CN%3Bbitrixcloud%2C18.5.0%2CN%3Brest%2C18.5.162%2CN%3Bmessageservice%2C19.0.0%2CN%3Bfileman%2C18.5.500%2CN&reqm=bitrix.sitecorporate&fullmoduleinfo=Y&SUPD_SRS=RU&SUPD_CMP=N
+2020-01-28 12:01:25 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-01-28 12:01:25 -  - TIME GetUpdatesList(request) 0.218 sec
+2020-01-28 12:01:25 -  - exec CUpdateClientPartner::ParseServerData
+2020-01-28 12:01:25 -  - exec CUpdateClientPartner::__CollectRequestData
+2020-01-28 12:01:25 -  - exec CUpdateClientPartner::GetHTTPPage
+2020-01-28 12:01:25 -  - exec CUpdateClientPartner::ParseServerData

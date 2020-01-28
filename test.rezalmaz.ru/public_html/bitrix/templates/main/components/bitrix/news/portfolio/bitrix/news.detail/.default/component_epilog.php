@@ -1,1 +1,0 @@
-<?$APPLICATION->SetPageProperty("description",$arResult["PROPERTIES"]['DESCRIPTION']["VALUE"]);?>

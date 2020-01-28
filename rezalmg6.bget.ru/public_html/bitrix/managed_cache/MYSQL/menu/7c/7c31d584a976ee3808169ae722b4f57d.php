@@ -1,7 +1,0 @@
-<?
-if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001579723466';
-$dateexpire = '001579727066';
-$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:8:{i:0;a:3:{s:4:"LINK";s:26:"/almaznoe_stroblenie/snip/";s:5:"LINKS";a:1:{i:0;s:26:"/almaznoe_stroblenie/snip/";}s:4:"PERM";s:1:"R";}i:1;a:3:{s:4:"LINK";s:35:"/almaznoe_stroblenie/gorizontalnoe/";s:5:"LINKS";a:1:{i:0;s:35:"/almaznoe_stroblenie/gorizontalnoe/";}s:4:"PERM";s:1:"R";}i:2;a:3:{s:4:"LINK";s:36:"/almaznoe_stroblenie/sten-pod-trubi/";s:5:"LINKS";a:1:{i:0;s:36:"/almaznoe_stroblenie/sten-pod-trubi/";}s:4:"PERM";s:1:"R";}i:3;a:3:{s:4:"LINK";s:45:"/almaznoe_stroblenie/potolka-v-panelnom-dome/";s:5:"LINKS";a:1:{i:0;s:45:"/almaznoe_stroblenie/potolka-v-panelnom-dome/";}s:4:"PERM";s:1:"R";}i:4;a:3:{s:4:"LINK";s:30:"/almaznoe_stroblenie/bez-pyli/";s:5:"LINKS";a:1:{i:0;s:30:"/almaznoe_stroblenie/bez-pyli/";}s:4:"PERM";s:1:"R";}i:5;a:3:{s:4:"LINK";s:37:"/almaznoe_stroblenie/pod-kondicioner/";s:5:"LINKS";a:1:{i:0;s:37:"/almaznoe_stroblenie/pod-kondicioner/";}s:4:"PERM";s:1:"R";}i:6;a:3:{s:4:"LINK";s:40:"/almaznoe_stroblenie/pazogrebnevyh-plit/";s:5:"LINKS";a:1:{i:0;s:40:"/almaznoe_stroblenie/pazogrebnevyh-plit/";}s:4:"PERM";s:1:"R";}i:7;a:3:{s:4:"LINK";s:32:"/almaznoe_stroblenie/instrument/";s:5:"LINKS";a:1:{i:0;s:32:"/almaznoe_stroblenie/instrument/";}s:4:"PERM";s:1:"R";}}}';
-return true;
-?>
