@@ -1,4 +1,4 @@
-<span class="h2"><span>Закажите с сайта.<br />Мы перезвоним!</span></span>
+<span class="h2"><span>Заказать звонок</span></span>
 <form id="form_order" method="post" onsubmit="yaCounter7139977.reachGoal('ORDER'); return true;"> 	
 	<div class="order_form_2">
 		<div class="toggleSlide">

@@ -56,7 +56,7 @@
 				<div class="header<? if ($APPLICATION->GetCurDir() != '/'): ?> inner<?endif?>"<? if (defined("ERROR_404")) { echo ' style="min-height:150px;"'; } ?>>
 					<?$APPLICATION->IncludeFile('/form_callback.php', array(), array('MODE'=>'html'))?> 
 					<? if (!defined("ERROR_404")) { ?>
-						<?if ($APPLICATION->GetCurDir() == '/') {?>
+						<?if ($APPLICATION->GetCurDir() == '/' && false) {?>
 						<div class="column_1">
 							<?$APPLICATION->IncludeFile(SITE_TEMPLATE_PATH.'/include_areas/header_logo_and_phones.php', array(), array('MODE'=>'php'))?>
 						</div>
