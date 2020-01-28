@@ -36,8 +36,8 @@ function show_img($source_image, $max_width=0, $max_height=0) {
 		}
 	}
 }
-function show_a_img($source_image, $preview_max_width=0, $preview_max_height=0, $max_width=0, $max_height=0) {
-	return '<a href="'. get_img_path($source_image, $max_width, $max_height) .'">'. CFile::ShowImage(get_img_path($source_image, $preview_max_width, $preview_max_height)) .'</a>';
+function show_a_img($source_image, $preview_max_width=0, $preview_max_height=0, $max_width=0, $max_height=0, $alt='') {
+	return '<a href="'. get_img_path($source_image, $max_width, $max_height) .'">'. CFile::ShowImage(get_img_path($source_image, $preview_max_width, $preview_max_height), '', '', 'alt="'.$alt.'"') .'</a>';
 }
 function get_img_path($source_image, $max_width=0, $max_height=0) {
 	$source_image = $_SERVER['DOCUMENT_ROOT'].$source_image;

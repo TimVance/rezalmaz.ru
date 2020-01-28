@@ -5,7 +5,7 @@
 	<? foreach ($arResult['ITEMS'] as $arItem): ?>
 		<li>
 			<div class="logo_box">
-				<?=CFile::ShowImage($arItem['PREVIEW_PICTURE']['ID'])?>
+				<?=CFile::ShowImage($arItem['PREVIEW_PICTURE']['ID'], '', '', 'alt="'.$arItem['NAME'].'"')?>
 			</div>
 			<?=$arItem['NAME']?>
 		</li>

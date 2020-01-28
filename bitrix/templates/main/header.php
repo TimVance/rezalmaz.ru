@@ -90,8 +90,8 @@
 							<div class="phones"> <a class="a-phone" href="tel:+74957929392"><span class="ya-phone">+7 (495) 792-93-92</span></a></div>
 							<div class="worktime">Ежедневно с 09:00 до 22:00<br /> Москва, Головинское шоссе, д. 10</div>
                             <div class="header-social">
-                                <a style="margin-right:5px;" href="https://www.youtube.com/channel/UC1LI9cqjWuMtKgtsyG-hqwA"><img src="/images/youtube-brands-svg.png" alt=""/></a>
-                                <a href="https://www.instagram.com/_rezalmaz_/"><img src="/images/instagram-brands-svg.png" alt=""/></a>
+                                <a style="margin-right:5px;" href="https://www.youtube.com/channel/UC1LI9cqjWuMtKgtsyG-hqwA"><img src="/images/youtube-brands-svg.png" alt="youtube"/></a>
+                                <a href="https://www.instagram.com/_rezalmaz_/"><img src="/images/instagram-brands-svg.png" alt="instagram"/></a>
                             </div>
                         </div>
 						<div class="clear"></div>

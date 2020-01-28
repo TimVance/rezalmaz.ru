@@ -35,8 +35,8 @@
 		<br />Все цены на сайте не являются публичной офертой.</p>
 		
 		<p><a href="/sitemap/">Карта сайта</a></p>
-		<p><a style="margin-right:5px;" href="https://www.youtube.com/channel/UC1LI9cqjWuMtKgtsyG-hqwA"><img src="/images/youtube-brands-svg.png" alt=""/></a>
-		<a href="https://www.instagram.com/_rezalmaz_/"><img src="/images/instagram-brands-svg.png" alt=""/></a></p>
+		<p><a style="margin-right:5px;" href="https://www.youtube.com/channel/UC1LI9cqjWuMtKgtsyG-hqwA"><img src="/images/youtube-brands-svg.png" alt="youtube"/></a>
+		<a href="https://www.instagram.com/_rezalmaz_/"><img src="/images/instagram-brands-svg.png" alt="instagram"/></a></p>
 		
 		<p> 	<?php
 			global $sape;
