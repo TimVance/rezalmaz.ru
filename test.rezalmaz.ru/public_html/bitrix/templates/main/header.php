@@ -120,9 +120,9 @@
 				
 <div class="breadcrumbs">
 	<?$APPLICATION->IncludeComponent("bitrix:breadcrumb","",Array(
-		"START_FROM" => "0", 
+		"START_FROM" => "1",
 		"PATH" => "", 
-		"SITE_ID" => "" 
+		"SITE_ID" => "s1"
 		)
 	);?>
 </div>
