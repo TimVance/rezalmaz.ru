@@ -1,0 +1,11 @@
+.news-page {
+    padding: 0 30px;
+}
+.news-page .preview_picture {
+    margin-right: 20px !important;
+    border-radius: 5px;
+}
+.news-page .news-date-time {
+    color: rgba(238, 96, 4, 0.7);
+    font-size: 12px;
+}

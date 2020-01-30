@@ -49,5 +49,12 @@ $aMenuLinks = Array(
 		Array(), 
 		"" 
 	),
+	Array(
+		"Статьи",
+		"/about/articles/",
+		Array(),
+		Array(),
+		""
+	),
 );
 ?>
