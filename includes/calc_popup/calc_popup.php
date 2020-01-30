@@ -1,7 +1,7 @@
 <?
 if(!CModule::IncludeModule("iblock"))
  return;
-
+return;
 $calc_groups = CIBlockElement::GetList(Array("SORT"=>"ASC"), Array("IBLOCK_ID" => 5, "ACTIVE" => "Y"));
 while($calc_group = $calc_groups->GetNextElement()){
 	$arr_group = $calc_group->GetFields();

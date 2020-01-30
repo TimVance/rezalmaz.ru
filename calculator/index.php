@@ -34,7 +34,7 @@ while($calc_type = $calc_types->GetNextElement()){
 
 // print_r($arr_type_param);
 ?>
-
+<div id="calculator-container">
 <link href="calc.css" type="text/css" rel="stylesheet" />
 <div class="text_style calc-block">
 	<h1>Калькулятор:</h1>
@@ -526,4 +526,5 @@ while($calc_type = $calc_types->GetNextElement()){
 		});
 	})(jQuery, location);
 </script>
+</div>
 <?php require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

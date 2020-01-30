@@ -32,7 +32,7 @@ while($calc_type = $calc_types->GetNextElement()){
 // print_r($arr_type_param);
 ?>
 
-<link href="calculator/calc.css" type="text/css" rel="stylesheet" />
+<link href="/calculator/calc.css" type="text/css" rel="stylesheet" />
 
 <table>
     <caption><h2>Расчет стоимости алмазной резки</h2></caption>
