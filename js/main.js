@@ -43,7 +43,8 @@ $(document).ready(function() {
 	});
 	
 	$('#phone_number-callback').mask("+7(999) 999-99-99");
-	
+	$('.modal-phone').mask("+7(999) 999-99-99");
+
 	if ($('.fancy').length){
 		$('.fancy').fancybox();
 		console.log('FANCY');
@@ -229,9 +230,9 @@ $(document).ready(function() {
 		if ($('input[name=phone_fax]', this).val() != ''){
 			i_am_bot = true;
 		}
-	
+
 		if (i_am_bot) return false;
-		
+
 		if ($('input[name=name]', this).val() !== '' && $('input[name=email]', this).val() !== '' && $('textarea[name=message]', this).val() !== '')
 			$.ajax({
 				url: '/send_reviews.php',
@@ -249,7 +250,30 @@ $(document).ready(function() {
 						alert(data.errors.join("\n"));
 				}
 			});
-		
+
+		return false;
+	});
+
+	$('#form_order_service').submit(function() {
+		if ($('input[name=name]', this).val() !== '' && $('input[name=phone]', this).val() !== '')
+			$.ajax({
+				url: '/send_order_modal.php',
+				type: 'post',
+				dataType: 'json',
+				data: {
+					'name': $('input[name=name]', this).val(),
+					'phone': $('input[name=phone]', this).val(),
+					'email': $('input[name=email]', this).val(),
+					'service': $('input[name=service]', this).val(),
+					'message': $('textarea[name=message]', this).val()
+				},
+				success: function(data) {
+					if (data.success == true)
+						$('#form_order_service').html('<div style="width:90%;text-align:center;margin:0 auto;padding:10px 0;font-size:14px;">Ваше отзыв отправлен.</div>')
+					else
+						alert(data.errors.join("\n"));
+				}
+			});
 		return false;
 	});
 	

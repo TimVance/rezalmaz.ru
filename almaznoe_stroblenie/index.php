@@ -73,6 +73,7 @@ $APPLICATION->SetTitle("Штробление");
 	<div class="right_column">
 		
 		<?$APPLICATION->IncludeFile('/block_calc_right.php', array(), array('MODE'=>'html'))?>
+        <?$APPLICATION->IncludeFile('/block_order_right.php', array(), array('MODE'=>'html'))?>
 		
 		<div class="grey_box_2">
 			<div class="grey_header">

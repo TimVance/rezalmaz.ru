@@ -41,6 +41,7 @@ $APPLICATION->SetTitle("Проем в несущей стене — алмазн
 	<div class="right_column" style="margin-top: -15px !important;"> 		
 	
 		<?$APPLICATION->IncludeFile('/block_calc_right.php', array(), array('MODE'=>'html'))?>
+        <?$APPLICATION->IncludeFile('/block_order_right.php', array(), array('MODE'=>'html'))?>
      		
 		<div class="grey_box_2" style="margin: -15px 0px 0px !important;"> 			
 			<div class="grey_header"> 				
