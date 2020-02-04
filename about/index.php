@@ -56,26 +56,25 @@ $APPLICATION->SetTitle("О компании — алмазное сверлен�
 		<p class="color_black">«РезАлмаз» - динамично развивающаяся компания, способная решать самые сложные задачи с гарантией качества и в кратчайшие сроки.</p>
 	</div>
 	<div class="right_column padding_top_43">
-		<div class="grey_box_2">
-			<div class="grey_header">
-				<div class="decor_l"></div>
-				<div class="decor_r"></div>
-			</div>
-			<div class="grey_content">
-				<div class="grey_content_l">
-					<div class="grey_content_r">
-						<div class="text_style order-form-block">
-							<p class="h2_bg form_title">Форма заказа</p>
-							<?$APPLICATION->IncludeFile('/form_order.php', array(), array('MODE'=>'html'))?>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="grey_footer">
-				<div class="decor_l"></div>
-				<div class="decor_r"></div>
-			</div>
-		</div>
+        <div class="grey_box_2">
+            <div class="grey_header">
+                <div class="decor_l"></div>
+                <div class="decor_r"></div>
+            </div>
+            <div class="grey_content">
+                <div class="grey_content_l">
+                    <div class="grey_content_r">
+                        <div class="text_style">
+                            <?$APPLICATION->IncludeFile('/form_order.php', array(), array('MODE'=>'html'))?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grey_footer">
+                <div class="decor_l"></div>
+                <div class="decor_r"></div>
+            </div>
+        </div>
 	</div>
 </div>
 
