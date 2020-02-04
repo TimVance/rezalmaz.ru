@@ -269,7 +269,7 @@ $(document).ready(function() {
 				},
 				success: function(data) {
 					if (data.success == true)
-						$('#form_order_service').html('<div style="width:90%;text-align:center;margin:0 auto;padding:10px 0;font-size:14px;">Ваше отзыв отправлен.</div>')
+						$('#form_order_service').html('<div style="width:90%;text-align:center;margin:0 auto;padding:10px 0;font-size:14px;">Ваш запрос отправлен.</div>')
 					else
 						alert(data.errors.join("\n"));
 				}

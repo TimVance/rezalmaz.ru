@@ -49,39 +49,6 @@
 </div>
 	<div class="bg-splash"></div>
 
-    <? if ($APPLICATION->GetCurDir() != '/' && $APPLICATION->GetCurDir() != '/calculator/'): ?>
-        <!--    Modal Calculator-->
-        <div style="display: none" class="calculator-load-modal">
-            <div class="close-modal">x</div>
-            <div class="content">
-                <div class="mp_calc">
-                    <?$APPLICATION->IncludeFile(
-                        SITE_DIR."includes/main_calc.php",
-                        array(),
-                        array(
-                            "MODE" => "html",
-                            "SHOW_BORDER" => "true",
-                            "NAME" => "Изменить",
-                            "TEMPLATE"  => ""
-                        )
-                    );?>
-                </div>
-            </div>
-        </div>
-        <script>
-            $(function() {
-                $('.icon_calc_1').click(function(e) {
-                    $(".calculator-load-modal, .bg-splash").show();
-                    e.preventDefault();
-                });
-                $('.calculator-load-modal .close-modal, .calculator-load-modal .close-callback').click(function() {
-                    $(".calculator-load-modal, .bg-splash").hide();
-                });
-            });
-        </script>
-        <!--    Modal Calculator-->
-    <? endif; ?>
-
 <script type="text/javascript">
     var make_redirect = false;
     var redirect_url  = "thanks.php";

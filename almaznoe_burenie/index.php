@@ -207,6 +207,20 @@ $fopen = file("names.txt")
        </ul>
      		</div>
    	</div>
+
+    <div class="mp_calc calculator-service-order">
+        <?$APPLICATION->IncludeFile(
+            SITE_DIR."includes/main_calc.php",
+            array(),
+            array(
+                "MODE" => "html",
+                "SHOW_BORDER" => "true",
+                "NAME" => "Изменить",
+                "TEMPLATE"  => ""
+            )
+        );?>
+    </div>
+
 </div>
 
 <?$APPLICATION->IncludeFile('/includes/calc_popup/calc_popup.php', array(), array('MODE'=>'html'));?>
