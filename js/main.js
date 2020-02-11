@@ -22,7 +22,35 @@ function init_default_values() {
 	});
 }
 
+var formOrderCaptcha; // Заказать звонок на странице услуги
+var formCallCaptcha; // Модальное окно заказать звонок
+var formOrderServiceCaptcha; // Заказать услугу на странице услуги
+var formCallCalcCaptcha; // Заявка с калькулятора услуг
+var formQuestionsCaptcha; // Вопрос-ответ
+var formReviewsCaptcha; // Отзывы
+var formContactCaptcha; // Страница контактов
+
+var sitekey = '6LdcodcUAAAAAADUQ1uAZpBdaP6EBcDaDfl8XtLX';
+
+function recaptchaCallback() {
+	if ($("div").is("#g-recaptcha-form_order"))
+		formOrderCaptcha = grecaptcha.render('g-recaptcha-form_order', {'sitekey': sitekey});
+	if ($("div").is("#g-recaptcha-form-callback"))
+		formCallCaptcha = grecaptcha.render('g-recaptcha-form-callback', {'sitekey': sitekey});
+	if ($("div").is("#g-recaptcha-form_order_service"))
+		formOrderServiceCaptcha = grecaptcha.render('g-recaptcha-form_order_service', {'sitekey': sitekey});
+	if ($("div").is("#g-recaptcha-form-callback_calc"))
+		formCallCalcCaptcha = grecaptcha.render('g-recaptcha-form-callback_calc', {'sitekey': sitekey});
+	if ($("div").is("#g-recaptcha-form_questions"))
+		formQuestionsCaptcha = grecaptcha.render('g-recaptcha-form_questions', {'sitekey': sitekey});
+	if ($("div").is("#g-recaptcha-form_reviews"))
+		formReviewsCaptcha = grecaptcha.render('g-recaptcha-form_reviews', {'sitekey': sitekey});
+	if ($("div").is("#g-recaptcha-form_contact"))
+		formContactCaptcha = grecaptcha.render('g-recaptcha-form_contact', {'sitekey': sitekey});
+}
+
 $(document).ready(function() {
+
 	$('.btn-menu-mobile').click(function(){
 		if ($('.top_menu, .top_menu_2').is(':hidden')){
 			$(this).addClass('active');
@@ -92,7 +120,7 @@ $(document).ready(function() {
 	});
 	
 	$('#form_order').submit(function() {
-	
+
 		if ($('input[name=phone_fax]', this).val() != ''){
 			i_am_bot = true;
 		}
@@ -121,13 +149,15 @@ $(document).ready(function() {
 				data: {
 					'name': $('input[name=name]', this).val(),
 					'email': $('input[name=email]', this).val(),
-					'message': $('textarea[name=message]', this).val()
+					'message': $('textarea[name=message]', this).val(),
+					'captcha': $('textarea[name=g-recaptcha-response]', this).val(),
 				},
 				success: function(data) {
 					if (data.success == true)
 						$('#form_order').html('<div style="width:90%;text-align:center;margin:0 auto;padding:10px 0;font-size:14px;">Ваша заявка принята! В ближайшее время мы свяжемся с вами для уточнения деталей.</div>')
 					else
 						alert(data.errors.join("\n"));
+					console.log(data.errors);
 				}
 			});
 		
@@ -164,6 +194,7 @@ $(document).ready(function() {
 	});
 	
 	$('#form_callback').submit(function() {
+
 		if ($('input[name=phone_fax]', this).val() != ''){
 			i_am_bot = true;
 		}
@@ -179,6 +210,7 @@ $(document).ready(function() {
 				data: {
 					'phone_number': oPhoneNumber.val(),
 					'client_name': $('#name-callback').val(),
+					'captcha': $('textarea[name=g-recaptcha-response]', this).val(),
 				},
 				success: function(data) {
 					if (data.success == true){
@@ -213,7 +245,8 @@ $(document).ready(function() {
 				data: {
 					'name': $('input[name=name]', this).val(),
 					'email': $('input[name=email]', this).val(),
-					'message': $('textarea[name=message]', this).val()
+					'message': $('textarea[name=message]', this).val(),
+					'captcha': $('textarea[name=g-recaptcha-response]', this).val(),
 				},
 				success: function(data) {
 					if (data.success == true)
@@ -241,7 +274,8 @@ $(document).ready(function() {
 				data: {
 					'name': $('input[name=name]', this).val(),
 					'email': $('input[name=email]', this).val(),
-					'message': $('textarea[name=message]', this).val()
+					'message': $('textarea[name=message]', this).val(),
+					'captcha': $('textarea[name=g-recaptcha-response]', this).val(),
 				},
 				success: function(data) {
 					if (data.success == true)
@@ -265,7 +299,8 @@ $(document).ready(function() {
 					'phone': $('input[name=phone]', this).val(),
 					'email': $('input[name=email]', this).val(),
 					'service': $('input[name=service]', this).val(),
-					'message': $('textarea[name=message]', this).val()
+					'message': $('textarea[name=message]', this).val(),
+					'captcha': $('textarea[name=g-recaptcha-response]', this).val(),
 				},
 				success: function(data) {
 					if (data.success == true)

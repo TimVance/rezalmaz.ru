@@ -14,6 +14,10 @@
 			</div>
        	</div>
 		<input type="text" class="phone_fax" name="phone_fax" value=""/>
+
+        <div id="g-recaptcha-form_questions"></div>
+        <div class="text-danger" id="recaptchaError"></div><br />
+
      	<label><span>*</span> Текст сообщения: </label>
 	</div>
    		

@@ -26,6 +26,10 @@
             <textarea name="message" rows="3"></textarea>
         </div>
         <div class="form-group">
+            <div id="g-recaptcha-form_order_service"></div>
+            <div class="text-danger" id="recaptchaError"></div><br />
+        </div>
+        <div class="form-group">
             <input type="submit" value="Отправить">
         </div>
     </form>

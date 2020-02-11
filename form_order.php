@@ -8,7 +8,10 @@
 			<label><span>*</span> Контактный телефон: </label>
 			<input type="text" name="email" data-default="" />
 			<input type="text" class="phone_fax" name="phone_fax" value=""/>
-		
+
+            <div id="g-recaptcha-form_order"></div>
+            <div class="text-danger" id="recaptchaError"></div><br />
+
 			<label><span>*</span> Текст сообщения: </label>
 		</div>
 		
@@ -17,7 +20,7 @@
 				<textarea cols="5" rows="5" name="message" class="show_form" data-default="Введите Ваше сообщение"></textarea>
 			</div>
 		</div>
-		
+
 		<div class="toggleSlide"> 			
 			<ul> 				
 				<li><input type="reset" class="clear" value="Закрыть" /></li>

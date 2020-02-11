@@ -26,8 +26,9 @@
 								<label>Ваше имя:</label>
 								<input type="text" id="name-callback<?=$sDopParam?>" name="name" data-default=""/>
 								<input type="text" class="phone_fax" name="phone_fax" value=""/>
-								
-								<ul>
+                                <div id="g-recaptcha-form-callback<?=$sDopParam?>"></div>
+                                <div class="text-danger" id="recaptchaError"></div>
+                                <ul>
 									<li><input type="submit" id="exec-callback<?=$sDopParam?>" class="button hide_form" value="Отправить"/></li>
 									<?/*<li><input type="button" id="close-callback<?=$sDopParam?>" class="button hide_form no-back" value="Закрыть"/></li>*/?>
 								</ul>
