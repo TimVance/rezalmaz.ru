@@ -501,6 +501,7 @@ while($calc_type = $calc_types->GetNextElement()){
                         data: {
                             'phone_number': oPhoneNumber.val(),
                             'client_name': $('#name-callback_calc').val(),
+                            'captcha': $('textarea[name=g-recaptcha-response]', this).val(),
                         },
                         success: function(data) {
                             if (data.success == true){

@@ -18,6 +18,44 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && strlen($_POST["submit"]) > 0)
 		$is_spam = (!empty($arParams['SPAM_FIELD']) && !empty($_POST[$arParams['SPAM_FIELD']]));
 		
 		if (!$is_spam){
+
+
+
+
+			// captcha
+			if (!empty($_POST['g-recaptcha-response'])) {
+				$recaptcha = $_POST['g-recaptcha-response'];
+				$secret='6LdcodcUAAAAAP2JHeFBUGWFxuVsQ96m0a1eu5Qh';
+
+				$url = 'https://www.google.com/recaptcha/api/siteverify';
+				$params = [
+					'secret' => $secret,
+					'response' => $recaptcha,
+					'remoteip' => $_SERVER['REMOTE_ADDR']
+				];
+
+				$ch = curl_init($url);
+				curl_setopt($ch, CURLOPT_POST, 1);
+				curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
+				curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+				curl_setopt($ch, CURLOPT_HEADER, 0);
+				curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+				$response = curl_exec($ch);
+				if(!empty($response)) $decoded_response = json_decode($response);
+				$result = false;
+				if ($decoded_response && $decoded_response->success)
+				{
+					$result = $decoded_response->success;
+				}
+				if (!$result) $arResult["ERROR_MESSAGE"][] = 'Докажите, что вы не робот';
+			}
+			else $arResult["ERROR_MESSAGE"][] = 'Докажите, что вы не робот';
+			// captcha
+
+
+
+
 			if(empty($arParams["REQUIRED_FIELDS"]) || !in_array("NONE", $arParams["REQUIRED_FIELDS"]))
 			{
 				if((empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])) && strlen($_POST["user_name"]) <= 1)
