@@ -126,7 +126,7 @@ a {outline: none;}
 
 .callback_form {
 	display: none;
-	width: 300px;
+	width: 350px;
 	position: fixed;
 /*	top: 85px;
 	left: 260px;*/
@@ -136,6 +136,19 @@ a {outline: none;}
 	transform: translate(-50%,-50%);
 	z-index:1000;
 	box-shadow:0 0 5px rgba(100,100,100,0.7);
+}
+
+div#g-recaptcha-form_questions, div#g-recaptcha-form_reviews,
+div#g-recaptcha-form_order {
+	-webkit-transform: scale(0.8) translateX(-19px);
+	-moz-transform: scale(0.8) translateX(-19px);
+	-ms-transform: scale(0.8) translateX(-19px);
+	-o-transform: scale(0.8) translateX(-19px);
+	transform: scale(0.8) translateX(-19px);
+}
+
+div#g-recaptcha-form_order.other_form {
+	transform: none;
 }
 
 .close-callback {

@@ -157,7 +157,7 @@ $(document).ready(function() {
 						$('#form_order').html('<div style="width:90%;text-align:center;margin:0 auto;padding:10px 0;font-size:14px;">Ваша заявка принята! В ближайшее время мы свяжемся с вами для уточнения деталей.</div>')
 					else
 						alert(data.errors.join("\n"));
-					console.log(data.errors);
+						//console.log(data.errors);
 				}
 			});
 		

@@ -7,7 +7,10 @@
 			
 			<label><span>*</span> Контактный телефон: </label>
 			<input type="text" name="email" data-default="" />
-			
+
+            <div id="g-recaptcha-form_order" class="other_form"></div>
+            <div class="text-danger" id="recaptchaError"></div><br />
+
 			<label><span>*</span> Текст сообщения: </label>
 		</div>
 		
