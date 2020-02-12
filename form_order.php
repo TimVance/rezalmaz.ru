@@ -1,5 +1,5 @@
 <span class="h2"><span>Заказать звонок</span></span>
-<form id="form_order" method="post" onsubmit="yaCounter7139977.reachGoal('ORDER'); return true;"> 	
+<form id="form_order" method="post" onsubmit="yaCounter7139977.reachGoal('callback_uslugi'); return true;">
 	<div class="order_form_2">
 		<div class="toggleSlide">
 			<label><span>*</span>Ваше имя: </label>

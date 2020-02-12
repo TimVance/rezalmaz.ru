@@ -4,7 +4,7 @@
 <div class="container-order-modal">
     <div class="closed">x</div>
     <span class="h2"><span>Заказать услугу</span></span>
-    <form id="form_order_service" method="post">
+    <form id="form_order_service" method="post" onsubmit="yaCounter7139977.reachGoal('order_usluga'); return true;">
         <div class="form-group">
             <span class="form-caption">Ваше имя:<i>*</i></span>
             <input type="text" name="name" required>

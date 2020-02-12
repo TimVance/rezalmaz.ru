@@ -11,7 +11,7 @@ if(strlen($arResult["OK_MESSAGE"]) > 0)
 }
 ?>
 
-<form action="" method="POST">
+<form action="" method="POST" onsubmit="yaCounter7139977.reachGoal('feedback'); return true;">
 <?=bitrix_sessid_post()?>
 	<div class="mf-name">
 		<div class="mf-text">

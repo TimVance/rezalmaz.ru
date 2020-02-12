@@ -18,7 +18,7 @@
 				<div class="close-callback"></div>
 					<div class="hdr3"><span>Контактные данные</span><p class="tm">Мы перезвоним в течение 15 минут</p></div>
 					<br />
-					<form id="form_callback<?=$sDopParam?>" method="post" onsubmit="yaCounter7139977.reachGoal('CALLBACK'); return true;">
+					<form id="form_callback<?=$sDopParam?>" method="post" onsubmit="yaCounter7139977.reachGoal('<?=($sDopParam ? 'order_calculator' : 'callback_header') ?>'); return true;">
 						<div class="order_form_2">
 								<label>Ваш телефон: <span>*</span></label>
 								<input type="text" id="phone_number-callback<?=$sDopParam?>" name="phone_number" data-default="" placeholder="+7(___) ___-__-__"/>
