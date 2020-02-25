@@ -1,4 +1,5 @@
 <?/*<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">*/?>
+
 <!DOCTYPE html>
 <html lang="ru" xmlns="https://www.w3.org/1999/xhtml" xml:lang="ru">
 <head>
@@ -6,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<title><?$APPLICATION->ShowTitle()?></title>
 
-	<meta name="yandex-verification" content="e220077cc35e015c" />
+
 	<meta property="og:title" content="Алмазная резка, бурение и штробление в Москве и Подмосковье – Резалмаз" />
 	<meta property="og:url" content="https://www.rezalmaz.ru/" />
 	<meta property="og:image" content="https://www.rezalmaz.ru/images/logo.png" />
@@ -30,22 +31,13 @@
 	<![endif]-->
 	<?/*<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />*/?>
 	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-<meta name='yandex-verification' content='47538c605b353b1b' />
+
 <?if($_SERVER['REQUEST_URI']=='/services/'){?>
 <meta name="robots" content="noindex, nofollow">
 <?}else{?>
 <meta name="robots" content="noyaca"/>
 <?}?>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125633195-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-125633195-1');
-</script>
-<script charset="UTF-8" src="//cdn.sendpulse.com/js/push/03918e2409f54566aed463b324e77260_1.js" async></script>
 </head>
 <body>
 <?$APPLICATION->ShowPanel()?>
@@ -87,8 +79,8 @@
 							<div class="callback"><a class="callback_link" href="#callback">Заказать звонок</a></div>
 						</div>
 						<div class="column_3">
-							<div class="phones"> <a class="a-phone" href="tel:+74957929392"><span class="ya-phone">+7 (495) 792-93-92</span></a></div>
-							<div class="worktime">Ежедневно с 09:00 до 22:00<br /> Москва, Головинское шоссе, д. 10</div>
+							<div class="phones ya-phone2"><a class="a-phone" href="tel:+74957929392"><span>+7 (495) 792-93-92</span></a></div>
+							<div class="worktime">Ежедневно с 09:00 до 22:00<br /> Москва, Лихоборская набережная, д.14</div>
                             <div class="header-social">
                                 <a style="margin-right:5px;" href="https://www.youtube.com/channel/UC1LI9cqjWuMtKgtsyG-hqwA"><img src="/images/youtube-brands-svg.png" alt="youtube"/></a>
                                 <a href="https://www.instagram.com/_rezalmaz_/"><img src="/images/instagram-brands-svg.png" alt="instagram"/></a>

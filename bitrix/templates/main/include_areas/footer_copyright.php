@@ -1,4 +1,3 @@
-
 <div class="footer_row">
 	<div class="col-2"> 
 		<!--noindex--><?$APPLICATION->IncludeComponent("bitrix:menu", "bottom", array(
@@ -26,7 +25,7 @@
 		
 		<p>Электронная почта: <a href="mailto:info@rezalmaz.ru" ><span itemprop="email">info@rezalmaz.ru</span></a></p>
 
-		<p><?=set_seo_link('/about/contacts/', '125130, Москва, Головинское шоссе, 10');?>
+		<p><?=set_seo_link('/about/contacts/', '125438, Москва, Лихоборская набережная, д.14');?>
 			<br /><span class="ya-phone" itemprop="telephone">+7 (495) 792-93-92</span></p>
 
 		<p style="margin-bottom:5px;">&copy;2007-<?php echo date('Y'); ?> &laquo;РезАлмаз&raquo; | Все права защищены. 
