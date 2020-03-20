@@ -305,6 +305,12 @@ ul.partner_list_2 li div.logo_box img {position:static; width:auto;}
 	text-align: center;
 }
 
+.breadcrumbs {
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
 /* ADAPTIVE */
 /* Large devices, Wide screens */
 @media only screen and (max-width:1200px){

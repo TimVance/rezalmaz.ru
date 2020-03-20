@@ -33,7 +33,7 @@
 	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 <?if($_SERVER['REQUEST_URI']=='/services/'){?>
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex, follow">
 <?}else{?>
 <meta name="robots" content="noyaca"/>
 <?}?>
@@ -113,12 +113,17 @@
 						</div>
 					<? } ?>
 				</div>
-				
-<div class="breadcrumbs">
-	<?$APPLICATION->IncludeComponent("bitrix:breadcrumb","",Array(
-		"START_FROM" => "1",
-		"PATH" => "", 
-		"SITE_ID" => "s1"
-		)
-	);?>
+        <? if ($APPLICATION->GetCurDir() != '/'): ?>
+            <div class="breadcrumbs">
+                <?$APPLICATION->IncludeComponent(
+                    "bitrix:breadcrumb",
+                    "universal",
+                    Array(
+                        "PATH" => "",
+                        "SITE_ID" => "s1",
+                        "START_FROM" => "0"
+                    )
+                );?>
+            </div>
+        <? endif; ?>
 </div>
