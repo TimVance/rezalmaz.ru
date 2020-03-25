@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<title><?$APPLICATION->ShowTitle()?></title>
 
-
+    <link rel="canonical" href="https://www.rezalmaz.ru<?echo $APPLICATION->GetCurDir(); ?>" />
 	<meta property="og:title" content="Алмазная резка, бурение и штробление в Москве и Подмосковье – Резалмаз" />
 	<meta property="og:url" content="https://www.rezalmaz.ru/" />
 	<meta property="og:image" content="https://www.rezalmaz.ru/images/logo.png" />
