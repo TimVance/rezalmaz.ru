@@ -14,6 +14,9 @@
 				<?=str_repeat("</ul></li>", ($previousLevel - $arItem["DEPTH_LEVEL"]));?>
 			<?endif?>
 
+            <?php if($arItem["LINK"] == '/services/') $arItem["LINK"] = 'javascript:void(0)'; ?>
+            <?php if($arItem["LINK"] == '/price/') $arItem["LINK"] = 'javascript:void(0)'; ?>
+
 			<?if ($arItem["IS_PARENT"]):?>
 
 				<?if ($arItem["DEPTH_LEVEL"] == 1):?>
