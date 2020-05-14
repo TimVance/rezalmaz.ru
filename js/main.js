@@ -120,12 +120,7 @@ $(document).ready(function() {
 	});
 	
 	$('#form_order').submit(function() {
-
-		if ($('input[name=phone_fax]', this).val() != ''){
-			i_am_bot = true;
-		}
-	
-		if (i_am_bot) return false;
+		console.log("init");
 		
 		if ($('input[name=name]', this).val() == ''){
 				$('input[name=name]', this).addClass('wrong');
@@ -153,8 +148,10 @@ $(document).ready(function() {
 					'captcha': $('textarea[name=g-recaptcha-response]', this).val(),
 				},
 				success: function(data) {
-					if (data.success == true)
+					if (data.success == true) {
+						dataLayer.push({'event': 'callback_uslugi'});
 						$('#form_order').html('<div style="width:90%;text-align:center;margin:0 auto;padding:10px 0;font-size:14px;">Ваша заявка принята! В ближайшее время мы свяжемся с вами для уточнения деталей.</div>')
+					}
 					else
 						alert(data.errors.join("\n"));
 						//console.log(data.errors);
@@ -218,6 +215,7 @@ $(document).ready(function() {
 						$('#name-callback').val('');
 						$('#form_callback').html('<p style="text-align:center;">Спасибо, мы перезвоним в<br>течении 15 минут</p>');
 						$('.callback_form').delay(2000).fadeOut();
+						dataLayer.push({'event': 'form_callback'});
 					}
 					else
 						alert(data.errors.join("\n"));
@@ -303,9 +301,10 @@ $(document).ready(function() {
 					'captcha': $('textarea[name=g-recaptcha-response]', this).val(),
 				},
 				success: function(data) {
-					if (data.success == true)
+					if (data.success == true) {
+						dataLayer.push({'event': 'order_usluga'});
 						$('#form_order_service').html('<div style="width:90%;text-align:center;margin:0 auto;padding:10px 0;font-size:14px;">Ваш запрос отправлен.</div>')
-					else
+					} else
 						alert(data.errors.join("\n"));
 				}
 			});

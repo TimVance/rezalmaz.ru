@@ -1,7 +1,9 @@
 <?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("keywords", "калькулятор алмазная резка, алмазное бурение");
+$APPLICATION->SetPageProperty("title", "Калькулятор алмазного бурения и алмазной резки | РезАлмаз");
 $APPLICATION->SetTitle("Калькулятор");
-$APPLICATION->SetPageProperty("description", "Калькулятор алмазной резки. Звоните по телефону +7 (495) 792-93-92.");
+$APPLICATION->SetPageProperty("description", "Калькулятор алмазного бурения и алмазной резки. Онлайн расчет стоимости услуг. Звоните по телефону +7 (495) 792-93-92.");
 
 if(!CModule::IncludeModule("iblock"))
  return;
@@ -502,6 +504,7 @@ while($calc_type = $calc_types->GetNextElement()){
 						},
 						success: function(data) {
 							if (data.success == true){
+                                dataLayer.push({'event': 'order_calculator'});
 								$('#form_callback_calc').html('<p class="thanks">Спасибо, мы перезвоним в<br>течение 15 минут</p><p class="understand"><a href="#">Понятно</a></p>');
 								oPhoneNumber.val('');
 								$('.callback_form_calc .hdr3').hide();

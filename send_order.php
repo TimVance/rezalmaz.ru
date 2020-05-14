@@ -39,7 +39,6 @@ if ($decoded_response && $decoded_response->success)
 $errors = $result;
 if ($_SERVER['REQUEST_METHOD'] == 'POST'
 	&& !empty($_POST['name'])
-	&& $result
 	&& !empty($_POST['email'])
 	&& !empty($_POST['message'])) {
 	
@@ -59,7 +58,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'
 	if (empty($_POST['name'])) $errors[] = 'Не заполнено поле "Ваше имя"';
 	if (empty($_POST['email'])) $errors[] = 'Не заполнено поле "Телефон"';
 	if (empty($_POST['message'])) $errors[] = 'Не заполнено поле "Текст сообщения"';
-	if (empty($_POST["captcha"]) || $result) $errors[] = 'Потвердите, что вы не робот';
 }
 
 print json_encode(array('success'=>$success, 'errors'=>$errors));

@@ -7,7 +7,10 @@
 }
 if(strlen($arResult["OK_MESSAGE"]) > 0)
 {
-	?><div class="mf-ok-text"><?=$arResult["OK_MESSAGE"]?></div><?
+	?>
+    <script>dataLayer.push({'event': 'feedback'});</script>
+    <div class="mf-ok-text"><?=$arResult["OK_MESSAGE"]?></div>
+    <?
 }
 ?>
 
@@ -17,13 +20,13 @@ if(strlen($arResult["OK_MESSAGE"]) > 0)
 		<div class="mf-text">
 			<?=GetMessage("MFT_NAME")?><?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("NAME", $arParams["REQUIRED_FIELDS"])):?><span class="mf-req">*</span><?endif?>
 		</div>
-		<input type="text" name="user_name" value="<?=$arResult["AUTHOR_NAME"]?>">
+		<input required type="text" name="user_name" value="<?=$arResult["AUTHOR_NAME"]?>">
 	</div>
 	<div class="mf-email">
 		<div class="mf-text">
 			<?=GetMessage("MFT_EMAIL")?><?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("EMAIL", $arParams["REQUIRED_FIELDS"])):?><span class="mf-req">*</span><?endif?>
 		</div>
-		<input type="text" name="user_email" value="<?=$arResult["AUTHOR_EMAIL"]?>">
+		<input required type="text" name="user_email" value="<?=$arResult["AUTHOR_EMAIL"]?>">
 		<input type="text" name="phone_fax" value="" class="phone_fax" />
 	</div>
 
@@ -31,7 +34,7 @@ if(strlen($arResult["OK_MESSAGE"]) > 0)
 		<div class="mf-text">
 			<?=GetMessage("MFT_MESSAGE")?><?if(empty($arParams["REQUIRED_FIELDS"]) || in_array("MESSAGE", $arParams["REQUIRED_FIELDS"])):?><span class="mf-req">*</span><?endif?>
 		</div>
-		<textarea name="MESSAGE" rows="5" cols="40"><?=$arResult["MESSAGE"]?></textarea>
+		<textarea required name="MESSAGE" rows="5" cols="40"><?=$arResult["MESSAGE"]?></textarea>
 	</div>
 
     <div id="g-recaptcha-form_contact"></div>

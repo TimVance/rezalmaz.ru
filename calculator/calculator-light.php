@@ -387,6 +387,7 @@ while($calc_type = $calc_types->GetNextElement()){
 						},
 						success: function(data) {
 							if (data.success == true){
+                                dataLayer.push({'event': 'order_calculator'});
 								$('#form_callback_calc').html('<p class="thanks">Спасибо, мы перезвоним в<br>течение 15 минут</p><p class="understand"><a href="#">Понятно</a></p>');
 								oPhoneNumber.val('');
 								$('.callback_form_calc .hdr3').hide();

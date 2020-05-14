@@ -68,13 +68,17 @@
     $(document).ready(function() {
          $(':input').blur(function () {
              if($(this).val().length > 0){
-                 pageTracker._trackEvent("Form: " + window.location.pathname + window.location.search, "input_exit", $(this).attr('name'));
+                 //pageTracker._trackEvent("Form: " + window.location.pathname + window.location.search, "input_exit", $(this).attr('name'));
              }
          });
      });
 	</script>
 
 
-	
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5H3F5W"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 </body>
 </html>

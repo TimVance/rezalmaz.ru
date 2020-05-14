@@ -37,7 +37,7 @@ if ($decoded_response && $decoded_response->success)
 
 
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['phone_number']) && $result) {
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['phone_number'])) {
 	
 		if (CEvent::Send("CALLBACK", "s1", array(
 			'PHONE_NUMBER' => trim($_POST['phone_number']), 'CLIENT_NAME' => trim($_POST['client_name']), 
